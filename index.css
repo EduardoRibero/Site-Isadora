@@ -1,0 +1,300 @@
+ * {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+ }
+
+:root{
+    --color-primary: #ebeced;
+    --color-secondary: #5b85bf;
+    --color-black: #000;
+    --color-white: #fff;
+}
+
+ body{
+   /* background-color: var(--color-secondary); */
+   background-image: url(image/bg-2.png);
+    padding: 0 0;
+
+ }
+
+
+ /* header, 
+ .inicial-section,
+ .servicos-section,
+ footer{
+    border-color: var(--color-black);
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+    padding: 1.25rem;
+ }*/
+
+ header img{
+    display: block;
+    margin: 1rem auto;
+    padding: 1rem 1rem;
+    border-radius: 25px;
+ }
+
+ header nav{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem auto 0;
+ }
+
+ nav a{
+    color: var(--color-black);
+    font-size: 1.25rem;
+    padding: .5rem;
+    text-decoration: none;
+ }
+
+ header nav a:nth-child(2n-1){
+    text-align: right;
+ }
+
+ 
+.button{
+    background-color: var(--color-white);
+    /* border: 2px solid var(--color-black);
+    box-shadow: 4px 4px 0 var(--color-black);
+    color: var(--color-black); */
+    display: block;
+    font-size: 1.25rem;
+    padding: .75rem 1rem;
+    max-width: 14rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 25px;
+}
+
+.inicial-section{
+   background-image: url(image/bg-4.png);
+   padding-right: 0;
+   padding-top: 1rem;
+   padding-bottom: 10rem;
+}
+
+#CONTATOS{
+   background-image: url(image/bg-4.png);
+   padding-bottom: 25rem;
+   /* border-color: var(--color-black);
+    border-style: solid;
+    border-width: 1px 1px 1px 1px; */
+}
+
+.inicial-section img{
+   display: block;
+   margin: 1.25rem 0 0 auto;
+   max-width: 100%;
+}
+
+.servicos-section{
+   padding-bottom: 5rem;
+
+}
+
+#CONTATOS{
+   padding-top: 10rem;
+}
+
+.card img{
+   border-radius: 25px; 
+}
+.container.row-reverse img{
+   border-radius: 25px; 
+}
+
+.cards{
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   gap: 1.25rem;
+   margin-top: 8;
+   margin-bottom: 14rem;
+   padding-top: 2em;
+   padding-bottom: 5rem;
+}
+.card{
+   /* background-color: var(--color-primary);
+   border: 2px solid var(--color-black);
+   box-shadow: 4px 4px 0 var(--color-black); */
+   max-width: 18rem;
+   padding: 2rem 0 0 2rem;
+}
+
+.card:nth-child(2n){
+   align-self: end;
+   /* background-color: var(--color-secondary); */
+}
+
+.card strong{
+   display: block;
+   font-size: 1.5rem;
+   margin: 1rem 0;
+}
+
+.card a{
+   display: block;
+   margin: 3re, 0 0 auto;
+   width: fit-content;
+}
+
+footer{
+   border-bottom: 0;
+   padding: 1rem 1.25rem 4rem;
+}
+
+footer nav a{
+   display: block;
+   padding-left: 0;
+
+}
+
+footer form label{
+   display: block;
+   font-size: 1.5rem;
+}
+
+.coluna1 img{
+   border-radius: 25px;
+}
+
+footer form input{
+   /* border: 2px solid var(--color-black);
+   box-shadow: 4px 4px 0 var(--color-black); */
+   font-size: 1.5rem;
+   padding: .2rem;
+   width: 100%;
+   border-radius: 25px;
+}
+
+h1{
+   font-size: 3rem;
+   line-height: 105%;
+}
+
+h2{
+   font-size: 2.5rem;
+}
+
+.inicial-section p{
+   font-size: 1.5rem;
+   padding-right: 25.rem;
+}
+
+ .mt-1{
+    margin-top: 1rem;
+}
+
+ .mt-2{
+    margin-top: 2rem;
+}
+ 
+ .mb-1{
+    margin-bottom: 1rem;
+}
+
+ .mb-2{
+    margin-bottom: 2rem;
+}
+
+.max-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-primary{
+    color: var(--color-primary);
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* Responsivide */
+
+@media screen and (min-width: 48rem){
+   header nav{
+      display: block;
+      text-align: center;
+   }
+
+   .cards{
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+
+   .card:nth-child(2n){
+      margin-top: 1rem;
+   }
+   
+}
+
+@media screen and (min-width: 48rem){
+   header div{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   header img,
+   header nav,
+   header .button{
+      margin: 0;
+      
+   }
+
+   .fot{
+      text-align: center;
+   }
+}
+
+@media screen and (min-width:72rem){
+   h1, h2{
+      font-size: 4rem;
+   }
+   .container{
+      
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      max-width: 72rem;
+   }
+
+   .container.row-reverse{
+      flex-direction: row-reverse;
+   }
+
+   .assinatura{
+      text-align: center;
+   }
+
+   .coluna1{
+      flex: 2;
+   }
+
+   footer nav{
+      flex: 1;
+   }
+
+   footer form{
+      flex: 3;
+   }
+
+   .p2{
+      font-size: 1.25rem;
+      max-width: 16rem;
+   }
+
+}
+
+@media screen and (min-width: 70rem){
+   .container{
+      max-width: 80rem;
+   }
+}
+
