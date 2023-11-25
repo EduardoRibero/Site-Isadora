@@ -94,6 +94,10 @@
    padding-top: 8rem;
 }
 
+.contatos div p{
+   margin-left: 100px;
+}
+
 
 .inicial-section img{
    display: block;
@@ -247,6 +251,7 @@ h2{
    header div{
       display: flex;
       align-items: center;
+      text-align: center;
       justify-content: space-between;
    }
 
