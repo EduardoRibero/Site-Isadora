@@ -18,6 +18,9 @@
     padding: 0 0;
 
  }
+ link{
+   border-radius: 95%;
+ }
 
 
  /* header, 
@@ -34,7 +37,7 @@
     display: block;
     margin: 1rem auto;
     padding: 1rem 1rem;
-    border-radius: 25px;
+    border-radius: 100%;
  }
 
  header nav{
@@ -68,36 +71,42 @@
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 25px;
+    margin: 0px;
 }
 
 .inicial-section{
    background-image: url(image/bg-4.png);
    padding-right: 0;
-   padding-top: 1rem;
-   padding-bottom: 10rem;
+   padding-top: 15rem;
+   padding-bottom: 30rem;
 }
 
-#CONTATOS{
+.contatos{
+   padding-top: 20rem;
    background-image: url(image/bg-4.png);
-   padding-bottom: 25rem;
+   padding-bottom: 30rem;
    /* border-color: var(--color-black);
     border-style: solid;
     border-width: 1px 1px 1px 1px; */
 }
+
+.contatos div{
+   padding-top: 8rem;
+}
+
 
 .inicial-section img{
    display: block;
    margin: 1.25rem 0 0 auto;
    max-width: 100%;
 }
-
-.servicos-section{
-   padding-bottom: 5rem;
-
+.inicio{
+   padding-left: 10px;
 }
+.servicos-section{
+   padding-top: 15rem;
+   padding-bottom: 23rem;
 
-#CONTATOS{
-   padding-top: 10rem;
 }
 
 .card img{
@@ -159,7 +168,7 @@ footer form label{
 }
 
 .coluna1 img{
-   border-radius: 25px;
+   border-radius: 100%;
 }
 
 footer form input{
