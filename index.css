@@ -13,7 +13,6 @@
 }
 
  body{
-   /* background-color: var(--color-secondary); */
    background-image: url(image/bg-2.png);
     padding: 0 0;
 
@@ -22,36 +21,13 @@
    border-radius: 95%;
  }
 
-
- /* header, 
- .inicial-section,
- .servicos-section,
- footer{
-    border-color: var(--color-black);
-    border-style: solid;
-    border-width: 0 1px 1px 1px;
-    padding: 1.25rem;
- }*/
-
  header img{
     display: block;
     margin: 1rem auto;
     padding: 1rem 1rem;
     border-radius: 100%;
  }
-/* 
- header nav{
-    display: grid;
-    grid-template-columns: 1fr;
-    text-align: center;
- }
 
- nav a{
-    color: var(--color-black);
-    font-size: 1.25rem;
-    padding: .5rem;
-    text-decoration: none;
- } */
  header nav{
    display: block;
    grid-template-columns: 1fr;
@@ -71,9 +47,6 @@ nav a{
  
 .button{
     background-color: var(--color-white);
-    /* border: 2px solid var(--color-black);
-    box-shadow: 4px 4px 0 var(--color-black);
-    color: var(--color-black); */
     display: block;
     font-size: 1.25rem;
     padding: .75rem 1rem;
@@ -96,9 +69,6 @@ nav a{
    padding-top: 20rem;
    background-image: url(image/bg-4.png);
    padding-bottom: 30rem;
-   /* border-color: var(--color-black);
-    border-style: solid;
-    border-width: 1px 1px 1px 1px; */
 }
 
 .contatos div{
@@ -109,15 +79,16 @@ nav a{
    text-align: center;
 }
 
-
 .inicial-section img{
    display: block;
    margin: 1.25rem 0 0 auto;
    max-width: 100%;
 }
+
 .inicio{
    padding-left: 10px;
 }
+
 .servicos-section{
    padding-top: 15rem;
    padding-bottom: 23rem;
@@ -127,6 +98,7 @@ nav a{
 .card img{
    border-radius: 25px; 
 }
+
 .container.row-reverse img{
    border-radius: 25px; 
 }
@@ -141,17 +113,14 @@ nav a{
    padding-top: 2em;
    padding-bottom: 5rem;
 }
+
 .card{
-   /* background-color: var(--color-primary);
-   border: 2px solid var(--color-black);
-   box-shadow: 4px 4px 0 var(--color-black); */
    max-width: 18rem;
    padding: 2rem 0 0 2rem;
 }
 
 .card:nth-child(2n){
    align-self: end;
-   /* background-color: var(--color-secondary); */
 }
 
 .card strong{
@@ -177,22 +146,8 @@ footer nav a{
 
 }
 
-footer form label{
-   display: block;
-   font-size: 1.5rem;
-}
-
 .coluna1 img{
    border-radius: 100%;
-}
-
-footer form input{
-   /* border: 2px solid var(--color-black);
-   box-shadow: 4px 4px 0 var(--color-black); */
-   font-size: 1.5rem;
-   padding: .2rem;
-   width: 100%;
-   border-radius: 25px;
 }
 
 h1{
@@ -208,6 +163,16 @@ h2{
    font-size: 1.5rem;
    padding-right: 25.rem;
 }
+
+.contatosRodaPe nav{
+   display: flex;
+   align-items: center;
+}
+
+.imgF{
+   border-radius: 5px;
+}
+
 
  .mt-1{
     margin-top: 1rem;
@@ -316,7 +281,7 @@ h2{
       flex: 1;
    }
 
-   footer form{
+   .contatosRodaPe nav{
       flex: 3;
    }
 
