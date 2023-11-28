@@ -255,7 +255,8 @@ h2{
       text-align: center;
    }
    h1, h2{
-      font-size: 4rem;
+      font-size: 3rem;
+      margin: 2rem 3rem 2rem 3rem;
    }
    .container{
       
