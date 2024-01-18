@@ -10,9 +10,9 @@ psicologia, além de conduzir o público interessado ao contato direto com o pro
 
 A landing Page é composta por 3 sessões 
 
-INÍCIO - Uma Apresentação sobre o profissional 
-SERVIÇOS - A sessão sobre as especialidades do profissional 
-CONTATOS - Contatos do profissional
+- INÍCIO - Uma Apresentação sobre o profissional 
+- SERVIÇOS - A sessão sobre as especialidades do profissional 
+- CONTATOS - Contatos do profissional
 
 ## Tecnologias Utilizadas
 
