@@ -7,7 +7,7 @@
 
 :root{
     --color-primary: #ebeced;
-    --color-secondary: ##EFEBE9;
+    --color-secondary: #EFEBE9;
     --color-black: #000;
     --color-white: #fff;
 }
@@ -15,7 +15,6 @@
  body{
    background-image: url(image/bg-2.png);
     padding: 0 0;
-
  }
 
  link{
@@ -50,7 +49,15 @@ nav a:hover{
     text-align: right;
  }
 
- 
+ h1{
+   font-size: 3rem;
+   line-height: 105%;
+}
+
+h2{
+   font-size: 2.5rem;
+}
+
 .button{
     background-color: var(--color-white);
     display: block;
@@ -62,7 +69,6 @@ nav a:hover{
     text-transform: uppercase;
     border-radius: 25px;
     margin: 0px;
-    
 }
 
 .button:hover{
@@ -70,25 +76,24 @@ nav a:hover{
    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
+.inicio{
+   padding-left: 10px;
+}
+
+.container.row-reverse img{
+   border-radius: 25px; 
+}
+
 .inicial-section{
    background-image: url(image/bg-4.png);
    padding-right: 0;
-   padding-top: 15rem;
+   padding-top: 10rem;
    padding-bottom: 30rem;
 }
 
-.contatos{
-   padding-top: 20rem;
-   background-image: url(image/bg-4.png);
-   padding-bottom: 30rem;
-}
-
-.contatos div{
-   padding-top: 8rem;
-}
-
-.contatos div p{
-   text-align: center;
+.inicial-section p{
+   font-size: 1.5rem;
+   padding-right: 0.25rem;
 }
 
 .inicial-section img{
@@ -98,29 +103,13 @@ nav a:hover{
 }
 
 .inicial-section img:hover{
-   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-
-.inicio{
-   padding-left: 10px;
+   box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
 }
 
 .servicos-section{
-   padding-top: 15rem;
+   padding-top: 3rem;
    padding-bottom: 23rem;
 
-}
-
-.card img{
-   border-radius: 25px; 
-}
-
-.card img:hover{
-   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-
-.container.row-reverse img{
-   border-radius: 25px; 
 }
 
 .cards{
@@ -128,17 +117,14 @@ nav a:hover{
    flex-direction: column;
    align-items: start;
    gap: 1.25rem;
-   margin-top: 8;
-   margin-bottom: 14rem;
-   padding-top: 2em;
-   padding-bottom: 5rem;
+   margin-top: -15rem;
+   margin-bottom: 2rem;
 }
 
 .card{
    max-width: 18rem;
    padding: 2rem 0 0 2rem;
 }
-
 
 .card:nth-child(2n){
    align-self: end;
@@ -150,52 +136,40 @@ nav a:hover{
    margin: 1rem 0;
 }
 
-.card a{
-   display: block;
-   margin: 3re, 0 0 auto;
-   width: fit-content;
+.card img{
+   border-radius: 25px; 
+}
+
+.card img:hover{
+   box-shadow: 0 0 90px rgba(0, 0, 0, 0.5);
+}
+
+.contatos{
+   padding-top: 8rem;
+   background-image: url(image/bg-4.png);
+   padding-bottom: 15rem;
+}
+
+.container-contatos{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+
+.container-contatos nav{
+   display: flex;
 }
 
 footer{
-   border-bottom: 0;
-   padding: 1rem 1.25rem 4rem;
+   padding: 1.25rem;
+   background-color: var(--color-primary);
 }
-
-footer nav a{
-   display: block;
-   padding-left: 0;
-
-}
-
-.coluna1 img{
-   border-radius: 100%;
-}
-
-h1{
-   font-size: 3rem;
-   line-height: 105%;
-}
-
-h2{
-   font-size: 2.5rem;
-}
-
-.inicial-section p{
-   font-size: 1.5rem;
-   padding-right: 25.rem;
-}
-
-.contatosRodaPe nav{
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-}
-
 
 .imgF{
    border-radius: 5px;
 }
-
 
  .mt-1{
     margin-top: 1rem;
@@ -266,10 +240,6 @@ h2{
       margin: 0;
       
    }
-
-   .fot{
-      text-align: center;
-   }
 }
 
 @media screen and (min-width:72rem){
@@ -297,15 +267,7 @@ h2{
       text-align: center;
    }
 
-   .coluna1{
-      flex: 2;
-   }
-
-   footer nav{
-      flex: 1;
-   }
-
-   .contatosRodaPe nav{
+   .ccontainer-contatos {
       flex: 3;
    }
 
